@@ -27,6 +27,7 @@ public class TransactionController {
         return "result";
     }
 
+
     //any thrown Exception (from this controller method) will be taken care of by @ExceptionHandler
     @ExceptionHandler(MyException.class)
     public ModelAndView error(MyException e) {
